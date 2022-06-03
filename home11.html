@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SEONGJIN AN | Personal Websites</title>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $('#home').show();
+                $('#page2').hide();
+                $('#page3').hide();
+
+
+                $('#homeButton').click(function() {
+                    $('#home').show();
+                    $('#page2').hide();
+                    $('#page3').hide();
+
+                });
+
+                $('#page2Button').click(function() {
+                    $('#home').hide();
+                    $('#page2').show();
+                    $('#page3').hide();
+
+                });
+
+                $('#page3Button').click(function() {
+                    $('#home').hide();
+                    $('#page2').hide();
+                    $('#page3').show();
+
+                });
+
+            });
+
+            
+            // $(document).ready(function() {
+            //     var aaa = $('.top_container').css({
+            //         position: 'fixed',
+            //         z_index: 1,
+            //         max_width: 1024
+            //     });
+            //     console.log(aaa);
+            // })
+
+            // $(document).ready(function() {
+
+            //     if(parseInt($('body').css('width')) >= 1024){
+            //         var mar = (parseInt($('*').css('width')) - 1024)/2;
+
+            //         $('body').css({
+            //             width: 1024,
+            //             marginLeft: mar,
+            //             marginRight: mar
+
+            //         });
+
+            //     }
+                    
+            // });
+
+            // $(document).ready(function() {
+            //     console.log(parseInt($('body').css('marginLeft')));
+            //     console.log($('body').css('marginRight'));
+            //     var newMar = $('body').css('marginLeft') + $('body').css('marginRight');
+            //     console.log(newMar);
+            // });
+
+            
+
+
+        </script>
+
+
+        <style>
+            body { width: auto; margin: 0 5%; }
+            /* .container { max-width: 1024px; } */
+            .top_container { width: 100%; overflow: hidden; position: relative; z-index: 1; }
+            .bottom_container { margin-top: 10px; }
+            #home, #page2, #page3 { position: relative; }
+            #home { width: auto;  overflow: hidden;}
+            div.picture_container { width: 40%; float: left;}
+            .picture{ width: auto; margin-top: 20px;}
+            div.article_container { width: 60%; float: right; }
+            .article { margin-left: 5%;}
+            img { width: 100%;}
+            h1.name { width: 50%; float: left;}
+            .menu_container { width: 30%; float: right;}
+            #menu { width: 100%; float: right; }
+            .menu_items { width: 100%; margin: 20px; margin-top: 35px;}
+            .menu_item { width: 30%; font-size: large;}
+            #homeButton { float: left;}
+            #page2Button { float: left;}
+            #page3Button { float: left;}
+
+            
+            
+            
+            
+
+            @media screen and (max-width: 767px) {
+                body { width: auto; margin: 0 10px;}
+                .container { width: auto; margin: 0; max-width: none;}
+                .top_container { width: auto; }
+                #home { width: auto; margin: 5px; }
+                div.picture_container { width: 100%;}
+                .picture{ width: auto; margin: 5px;}
+                div.article_container { width: auto;}
+                .article { width: auto; margin: 5px;}
+                img { width: 100%;}
+                h1.name { width: 100%;}
+                .menu_container { width: 100%; float: left;}
+                #menu { width: 100%; float: left; }
+                .menu_items { width: 100%; margin: 0px 10px;}
+                .menu_item { width: 100%;}
+                #homeButton { float: left;}
+                #page2Button { float: left;}
+                
+            }
+
+        </style>
+
+
+    </head>
+    <body>
+            <div class="container">
+                <div class="top_container">
+                    <h1 class="name">SEONGJIN AN</h1>
+
+
+                        <div class="menu_container">
+                            <div id="menu">
+                                <div class="menu_items">
+                                    <div id="homeButton" class="menu_item">home</div><div id="page2Button" class="menu_item">Hometown</div><div id="page3Button" class="menu_item">etc</div>
+                                </div>
+                            </div>    
+                        </div>   
+                 
+                </div>
+                
+
+                <div class="bottom_container">
+                    <div id="home">
+                        <div class="picture_container">
+                            <div class="picture">
+                                <img src="https://via.placeholder.com/140x100">
+                            </div>                       
+                        </div>
+
+                        <div class="article_container"> 
+                            <div class="article">
+                                <h1>Who am I ?</h1>
+                                <p>I am a student who is currently majoring in computer engineering at Kangwon National University in 2022. Originally, it was division of liberal studies when I entered the school, but after I entered the school, I became interested in learning Java and Python, so I chose computer engineering. I don't know what field I want yet because it hasn't been long since I became interested in computers, so I will continue to learn and find it.</p>
+                            </div>          
+                            
+                        </div>
+                    </div>
+
+                    <div id="page2">
+                        <h1>INCHEON</h1>
+                        <p>My hometown is Incheon. I was born in Incheon and went to Incheon from elementary school to high school, and I still live in Incheon.</p>
+                        <br>
+                        <h2>Subway</h2>
+                        <p>In Incheon, there are a total of six trains: Incheon Line 1, Incheon Line 2, Suin Bundang Line, Line 1, Line 7, and Airport Railroad. Among them, I usually use Line 1 when I go to Seoul or pass by. The subway that I usually use the most is Incheon Line 1, and I use it a lot when I go to Munhak Stadium and Moonlight Festival Park.</p>
+                        <h2>Sports</h2>
+                        <p>In Incheon, there were professional teams in baseball, soccer, volleyball, and basketball, and in the past, there were professional ice hockey teams. Among them, I have been to watch baseball, soccer volleyball, and ice hockey games in person, but I have not yet been to basketball in person.</p>
+                    </div>
+
+                    <div id="page3">
+                        
+                        <h2>BASEBALL</h2>
+                        <p>I like all sports in general, but I like baseball the most among them. My hobby is playing baseball with my friends, and I like SSG Landers among professional baseball teams. On average, I think I go to see a professional baseball game once a week. This year (2022), the baseball team's performance is good, so I'm happy that it will go to the postseason.</p>
+                        <h2>FLOORBALL</h2>
+                        <p>I was a floorball player from the first grade of middle school to the first grade of high school. Floorball is a sport very similar to ice hockey. The difference is that you don't wear protective equipment and do it on the floor, not on ice. Our team won the first place in the regional competition and the first place in the period competition, and went to the national competition and the second place even produced the results.</p>
+                        <h2>The classes I've taken so far</h2>
+                        <ul>
+                            <li>an understanding of architecture</li>
+                            <li>Architectural Design Studio 1</li>
+                            <li>Writing and Speaking (Natural Engineering)</li>
+                            <li>Differential integration and computer practice1</li>
+                            <li>Career Exploration and Dream Design</li>
+                            <li>Communication English (Listening, Speaking)</li>
+                            <li>Programming Basics</li>
+                            <li>Python programming</li>
+                            <li>Computational Thinking (typical)</li>
+                            <li>the physics of life</li>
+                            <li>Introduction to computers</li>
+                            <li>C programming</li>
+                            <li>Object-oriented programming</li>
+                            <li>Communication English (Reading, Writing)</li>
+                            <li>Humanity and Ethics</li>
+                            <li>Understanding the Multicultural Society</li>
+                            <li>a healthy trip to the forest</li>
+                            <li>Logical circuit (currently taking classes)</li>
+                            <li>Linear algebra (currently taking classes)</li>
+                            <li>Linux programming (currently taking classes)</li>
+                            <li>Data structure (currently taking classes)</li>
+                            <li>Web programming (currently taking classes)</li>
+                            <li>Living Russian (currently taking classes)</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </body>
+</html>
