@@ -9,17 +9,25 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <script>
             $(document).ready(function() {
-                $('#home').show();
-                $('#page2').hide();
-                $('#page3').hide();
+                $('#home').show('normal');
+                $('#page2').hide('normal');
+                $('#page3').hide('normal');
+
+                $('#homeButton').addClass('pwd');
 
                 $('#nameButton').click(function() {
                     $('#nameButton').toggle('normal');
                     $('#nameButton').toggle('normal');
 
+                    $('#homeButton').addClass('pwd');
+                    $('#page2Button').removeClass('pwd');
+                    $('#page3Button').removeClass('pwd');
+
+
                     $('#home').show('normal');
                     $('#page2').hide('normal');
                     $('#page3').hide('normal');
+
 
                 });
 
@@ -28,6 +36,10 @@
                     $('#nameButton').toggle('normal');
                     $('#homeButton').toggle('normal');
                     $('#homeButton').toggle('normal');
+
+                    $('#homeButton').addClass('pwd');
+                    $('#page2Button').removeClass('pwd');
+                    $('#page3Button').removeClass('pwd');
 
                     $('#home').show('normal');
                     $('#page2').hide('normal');
@@ -42,6 +54,10 @@
                     $('#homeButton').toggle('normal');
                     $('#page2Button').toggle('narmal');
                     $('#page2Button').toggle('nramal');
+
+                    $('#page2Button').addClass('pwd');
+                    $('#homeButton').removeClass('pwd');
+                    $('#page3Button').removeClass('pwd');
 
                     $('#home').hide('normal');
                     $('#page2').show('normal');
@@ -59,6 +75,10 @@
                     $('#page3Button').toggle('normal');
                     $('#page3Button').toggle('normal');
 
+                    $('#page3Button').addClass('pwd');
+                    $('#homeButton').removeClass('pwd');
+                    $('#page2Button').removeClass('pwd');
+
                     $('#home').hide('normal');
                     $('#page2').hide('normal');
                     $('#page3').show('normal');
@@ -67,9 +87,9 @@
 
             });
 
-            $(document).ready(function() {
-                $('<hr>').appendTo('.top_container');
-            })
+            // $(document).ready(function() {
+            //     $('<hr>').appendTo('.top_container');
+            // })
 
             
             // $(document).ready(function() {
@@ -146,7 +166,7 @@
             .menu_items { width: 100%; margin: 20px; margin-top: 35px;}
             .menu_item {  font-size: large;}
             #homeButton, #page2Button, #page3Button { float: left; width: 30%;}
-
+            .pwd { background: rgb(200, 200, 200); border-radius: 2.5px;}
             
             
             
@@ -166,11 +186,12 @@
                 h1.name { width: 100%;}
                 .menu_container { width: 100%; float: left;}
                 #menu { width: 99%; float: left; border: 1px solid black; background-color: rgb(236, 236, 236);}
-                .menu_items { width: 100%; margin: 0px 10px;}
+                .menu_items { width: 96%; margin: 0px 10px;}
                 .menu_item { width: 100%; }
                 #homeButton { float: left; width: 100%; margin: 3px 0; }
                 #page2Button { float: left; width: 100%; margin: 3px 0;}
                 #page3Button { float: left; width: 100%; margin: 3px 0;}
+
                 
                 
             }
@@ -215,7 +236,8 @@
                     </div>
 
                     <div id="page2">
-                        <h1>INCHEON</h1>
+                        <br>
+                        <h2>INCHEON</h2>
                         <p>My hometown is Incheon. I was born in Incheon and went to Incheon from elementary school to high school, and I still live in Incheon.</p>
                         <br>
                         <h2>Subway</h2>
@@ -226,7 +248,7 @@
 
                     <div id="page3">
                         
-                        
+                        <br>
                         <h2>The classes I've taken so far</h2>
                         <ul>
                             <li>an understanding of architecture</li>
