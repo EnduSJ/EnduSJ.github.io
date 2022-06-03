@@ -101,22 +101,22 @@
             // });
 
             window.onload = function() {
-                const imageRootPath = "./";
+                const imageRootPath = "./chki/";
                 var count = 0;
                 var image = document.getElementById('image');
                 var frames = [
-                    'KakaoTalk_20220603_210057986_00', 'KakaoTalk_20220603_210057986_01','KakaoTalk_20220603_210057986_02','KakaoTalk_20220603_210057986_03', 'KakaoTalk_20220603_210057986_04',
-                    'KakaoTalk_20220603_210057986_05', 'KakaoTalk_20220603_210057986_06', 'KakaoTalk_20220603_210057986_07', 'KakaoTalk_20220603_210057986_08', 'KakaoTalk_20220603_210057986_09',
-                    'KakaoTalk_20220603_210057986_10', 'KakaoTalk_20220603_210057986_11', 'KakaoTalk_20220603_210057986_12', 'KakaoTalk_20220603_210057986_13', 'KakaoTalk_20220603_210057986_14', 
-                    'KakaoTalk_20220603_210057986_15', 'KakaoTalk_20220603_210057986_16', 'KakaoTalk_20220603_210057986_17', 'KakaoTalk_20220603_210057986_18', 'KakaoTalk_20220603_210057986_19', 
-                    'KakaoTalk_20220603_210057986_20', 'KakaoTalk_20220603_210057986_21', 'KakaoTalk_20220603_210057986_22', 'KakaoTalk_20220603_210057986_23', 'KakaoTalk_20220603_210057986_24', 
-                    'KakaoTalk_20220603_210057986_25', 'KakaoTalk_20220603_210057986_26', 'KakaoTalk_20220603_210057986_27', 'KakaoTalk_20220603_210057986_28', 'KakaoTalk_20220603_210057986_29'
+                    'KakaoTalk_20220603_212726917_00.jpg', 'KakaoTalk_20220603_212726917_01.jpg','KakaoTalk_20220603_212726917_02.jpg','KakaoTalk_20220603_212726917_03.jpg', 'KakaoTalk_20220603_212726917_04.jpg',
+                    'KakaoTalk_20220603_212726917_05.jpg', 'KakaoTalk_20220603_212726917_06.jpg', 'KakaoTalk_20220603_212726917_07.jpg', 'KakaoTalk_20220603_212726917_08.jpg', 'KakaoTalk_20220603_212726917_09.jpg',
+                    'KakaoTalk_20220603_212726917_10.jpg', 'KakaoTalk_20220603_212726917_11.jpg', 'KakaoTalk_20220603_212726917_12.jpg', 'KakaoTalk_20220603_212726917_13.jpg', 'KakaoTalk_20220603_212726917_14.jpg', 
+                    'KakaoTalk_20220603_212726917_15.jpg', 'KakaoTalk_20220603_212726917_16.jpg', 'KakaoTalk_20220603_212726917_17.jpg', 'KakaoTalk_20220603_212726917_18.jpg', 'KakaoTalk_20220603_212726917_19.jpg', 
+                    'KakaoTalk_20220603_212726917_20.jpg', 'KakaoTalk_20220603_212726917_21.jpg', 'KakaoTalk_20220603_212726917_22.jpg', 'KakaoTalk_20220603_212726917_23.jpg', 'KakaoTalk_20220603_212726917_24.jpg', 
+                    'KakaoTalk_20220603_212726917_25.jpg', 'KakaoTalk_20220603_212726917_26.jpg', 'KakaoTalk_20220603_212726917_27.jpg', 'KakaoTalk_20220603_212726917_28.jpg', 'KakaoTalk_20220603_212726917_29.jpg'
                 ];
 
                 setInterval(function() {
                     image.src = imageRootPath+frames[count % frames.length];
                     count++;
-                }), 1000 /20;
+                }, 1500/20);
             };
 
 
